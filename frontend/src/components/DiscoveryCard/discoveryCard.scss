@@ -1,0 +1,27 @@
+.card {
+  padding-top: 5rem;
+  margin: auto;
+  text-align: center;
+  color: white;
+  max-width: 70%;
+
+  .container {
+    margin-top: 1.5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+
+    .icon {
+      color: black;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 2rem;
+    }
+  }
+}
+
+a {
+  font-size: 1.5rem;
+}

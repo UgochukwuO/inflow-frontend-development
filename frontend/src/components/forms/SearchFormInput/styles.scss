@@ -1,0 +1,17 @@
+.formRow {
+
+  input,
+  &.checkoutInput select {
+    text-align: left;
+    font-size: 2rem;
+    padding: 3%;
+    color: rgba(255, 255, 255, 0.276);
+    width: 400px;
+    max-width: 60%;
+    height: 44px;
+    background: #182541;
+    border: 1px solid #03102a;
+    border-radius: 15px;
+    outline: none;
+  }
+}
