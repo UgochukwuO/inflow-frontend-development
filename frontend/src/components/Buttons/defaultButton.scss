@@ -1,0 +1,21 @@
+.default-button {
+  color: white;
+  outline: none;
+  font-size: 1.5rem;
+  width: 90px;
+  height: 30px;
+  background :#19294d;
+  border-radius: 64px;
+}
+
+.default-button:hover {
+    color: white;
+    outline: none;
+    font-size: 1.5rem;
+    width: 90px;
+    height: 30px;
+    background: transparent linear-gradient(90deg, #00c1cb 0%, #8302fa 100%) 
+      no-repeat padding-box;
+    border-radius: 64px;
+  }
+
