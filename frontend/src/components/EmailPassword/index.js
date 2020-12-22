@@ -3,7 +3,11 @@ import React, { useState, useEffect } from 'react';
 import './styles.scss';
 
 import AuthWrapper from './../AuthWrapper';
+<<<<<<< HEAD
 import FormInput from './../forms/FormInput/formInput';
+=======
+import FormInput from './../forms/FormInput';
+>>>>>>> 1cb314af5ae43b055b25915a92fe26105af358cd
 import Button from './../forms/Button';
 
 

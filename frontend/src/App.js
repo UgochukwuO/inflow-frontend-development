@@ -52,6 +52,7 @@ const App = (props) => {
           exact
           path="/artist-page"
           render={() => (
+<<<<<<< HEAD
             <ArtistPage />
           )}
         />
@@ -64,6 +65,28 @@ const App = (props) => {
           )} />
         <Route path="/recovery" render={() => (
             <Recovery />
+=======
+            <HomepageLayout>
+              <ArtistPage />
+            </HomepageLayout>
+          )}
+        />
+        <Route path="/registration" render={() => (
+          <MainLayout>
+            <Registration />
+          </MainLayout>
+        )} />
+        <Route path="/login"
+          render={() => (
+            <MainLayout>
+              <Login />
+            </MainLayout>
+          )} />
+        <Route path="/recovery" render={() => (
+          <MainLayout>
+            <Recovery />
+          </MainLayout>
+>>>>>>> 1cb314af5ae43b055b25915a92fe26105af358cd
         )} />
         <Route path="/dashboard" render={() => (
 
