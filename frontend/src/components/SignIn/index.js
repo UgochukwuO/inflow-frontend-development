@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import './styles.scss';
 
 import AuthWrapper from './../AuthWrapper';
-import FormInput from './../forms/FormInput';
+import FormInput from './../forms/FormInput/formInput';
 import Button from './../forms/Button';
 
 
@@ -13,18 +13,19 @@ const SignIn = props => {
  
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('')
+  const [name, setName] = useState('')
 
 
  
   const configAuthWrapper = {
-    headline: 'LogIn'
+    headline: ''
   };
 
   return (
     <AuthWrapper {...configAuthWrapper}>
+    
       <div className="formWrap">
         <form>
-
           <FormInput
             type="email"
             name="email"
@@ -40,9 +41,14 @@ const SignIn = props => {
             placeholder="Password"
             handleChange={e => setPassword(e.target.value)}
           />
+          <div className="links">
+            <Link to="/recovery">
+              Forgot password?
+              </Link>
+          </div>
 
           <Button type="submit">
-            LogIn
+            Login
             </Button>
 
           <div className="socialSignin">
@@ -52,13 +58,6 @@ const SignIn = props => {
               </Button>
             </div>
           </div>
-
-          <div className="links">
-            <Link to="/recovery">
-              Reset Password
-              </Link>
-          </div>
-
         </form>
       </div>
     </AuthWrapper>

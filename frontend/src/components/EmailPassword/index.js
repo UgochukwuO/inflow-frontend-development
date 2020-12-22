@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './styles.scss';
 
 import AuthWrapper from './../AuthWrapper';
-import FormInput from './../forms/FormInput';
+import FormInput from './../forms/FormInput/formInput';
 import Button from './../forms/Button';
 
 

@@ -3,11 +3,17 @@
 }
 
 .links {
+  text-align: right;
+  padding-bottom: 1vh;
   display: block;
   width: 100%;
   margin: 1.5rem auto 0;
 
   a {
-    color: black;
+    color: #4AD295;
   }
+}
+
+.formWrap {
+  width: 100%;
 }

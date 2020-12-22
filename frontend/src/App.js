@@ -52,26 +52,18 @@ const App = (props) => {
           exact
           path="/artist-page"
           render={() => (
-            <HomepageLayout>
-              <ArtistPage />
-            </HomepageLayout>
+            <ArtistPage />
           )}
         />
         <Route path="/registration" render={() => (
-          <MainLayout>
             <Registration />
-          </MainLayout>
         )} />
         <Route path="/login"
           render={() => (
-            <MainLayout>
-              <Login />
-            </MainLayout>
+              <Login />          
           )} />
         <Route path="/recovery" render={() => (
-          <MainLayout>
             <Recovery />
-          </MainLayout>
         )} />
         <Route path="/dashboard" render={() => (
 

@@ -1,3 +1,15 @@
-.artistpage {
-    height: calc(100% - 6.5rem - 5.8rem);
+.artist-page {
+    text-align: center;
+
+    .name-image {
+      color: white;
+      padding-top: 3vh;
+  }
+
+    .bubble-container {
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr;
+      margin: 5vh;
+    }
+    
   }

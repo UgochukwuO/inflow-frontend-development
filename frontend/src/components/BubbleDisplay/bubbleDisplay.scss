@@ -1,0 +1,19 @@
+.container {
+    text-align: center;
+    color: white;
+    margin: auto;
+
+    .bubble {
+        text-align: center;
+        margin: auto;
+        padding: 40px;
+        width: 110px;
+        height: 110px;
+        border: 1px solid white;
+        border-radius: 300px;
+    }
+
+    .headline {
+        margin: 2vh;
+    }
+}
