@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import Modal from './../../components/Modal';
-<<<<<<< HEAD
 import FormInput from './../../components/forms/FormInput/formInput';
-=======
-import FormInput from './../../components/forms/FormInput';
->>>>>>> 1cb314af5ae43b055b25915a92fe26105af358cd
 import FormSelect from './../../components/forms/FormSelect';
 import Button from './../../components/forms/Button';
 import LoadMore from './../../components/LoadMore';

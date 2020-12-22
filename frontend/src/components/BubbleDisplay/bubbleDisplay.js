@@ -6,14 +6,25 @@ import './bubbleDisplay.scss'
         TotalSupplyHeadline: 'Total Supply',
         NextTokenRealeaseHeadline: 'Next Token Realease'
  */
-const BubbleDisplay = ({headline, children}) => {
+const BubbleDisplay = ({
+    supplyHeadline, 
+    totalSupplyHeadline, 
+    nextTokenRealeaseHeadline, 
+    children
+    }) => {
     return (
         <div className='container'>
             <div className='bubble'>
                 {children && children}
             </div>
             <div className='headline'>
-                {headline && headline}
+                {supplyHeadline && supplyHeadline}
+            </div>
+            <div className='headline'>
+                {totalSupplyHeadline && totalSupplyHeadline}
+            </div>
+            <div className='headline'>
+                {nextTokenRealeaseHeadline && nextTokenRealeaseHeadline}
             </div>
         </div>
     )

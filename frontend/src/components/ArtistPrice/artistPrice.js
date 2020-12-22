@@ -2,15 +2,15 @@ import React from 'react'
 
 import './artistPrice.scss'
 
-const ArtistPrice = () => {
+const ArtistPrice = ({headline, children}) => {
     return (
         <div className='artist-price'>
             <div className='title'>
-                Price
+                {headline && headline}
             </div>
 
             <div className='price'>
-                $48.30
+                {children && children}
             </div>
         </div>
     )

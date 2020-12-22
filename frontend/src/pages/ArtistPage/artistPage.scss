@@ -1,15 +1,20 @@
 .artist-page {
+  text-align: center;
+  margin: auto;
+
+  .name-image {
+    color: white;
+    padding-top: 3vh;
+  }
+
+  .bubble-container {
+    display: grid;
     text-align: center;
-
-    .name-image {
-      color: white;
-      padding-top: 3vh;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 10px;
+    width: 25%;
+    margin: 5vh auto;
   }
-
-    .bubble-container {
-      display: grid;
-      grid-template-columns: 2fr 2fr 2fr;
-      margin: 5vh;
-    }
-    
-  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom'
 import SearchBar from "../../components/SearchBar/searchBar";
 import ArtistName from "../../components/ArtistName/artistName";
 import ArtistImage from "../../components/ArtistImage/artistImage";
@@ -6,6 +7,7 @@ import ArtistPrice from "../../components/ArtistPrice/artistPrice";
 import ArtistPriceGraph from "../../components/ArtistPriceGraph/artistPriceGraph";
 import ArtistVideo from "../../components/ArtistVideo/artistVideo";
 import BubbleDisplay from "../../components/BubbleDisplay/bubbleDisplay";
+import EcosystemButton from "../../components/Buttons/ecosystemButton";
 
 import "./artistPage.scss";
 
@@ -17,8 +19,20 @@ import "./artistPage.scss";
 
 const ArtistPage = (props) => {
 
-    const configBubbleDisplay = {
-        headline: 'Circulating Supply'
+    // bubble component
+    const configSupplyHeadline = {
+        supplyHeadline: 'Circulating Supply',
+    }
+    const configTotalSupplyHeadline = {
+        totalSupplyHeadline: 'Total Supply',
+    }
+    const configNextTokenRealeaseHeadline = {
+        nextTokenRealeaseHeadline: 'Token Realease',
+    }
+
+    // price component
+    const configPriceHeadline = {
+        headline: 'Price'
     }
 
   return (
@@ -30,20 +44,31 @@ const ArtistPage = (props) => {
           <ArtistImage />
         </div>
         <div>
-          <ArtistPrice />
+          <ArtistPrice {...configPriceHeadline}>
+              $48.30
+          </ArtistPrice>
         </div>
         <ArtistPriceGraph />
         <ArtistVideo />
         <div className='bubble-container'>
-          <BubbleDisplay {...configBubbleDisplay}>
+          <BubbleDisplay {...configSupplyHeadline}>
               18.8M
           </BubbleDisplay>
-          <BubbleDisplay {...configBubbleDisplay}>
+
+          <BubbleDisplay {...configTotalSupplyHeadline}>
               80.9M
           </BubbleDisplay>
-          <BubbleDisplay {...configBubbleDisplay}>
+          
+          <BubbleDisplay {...configNextTokenRealeaseHeadline}>
               25
           </BubbleDisplay>
+        </div>
+        <div>
+            <NavLink to="/eco-manage-page">
+                <EcosystemButton>
+                    Ecosystem Management
+                </EcosystemButton>
+            </NavLink>
         </div>
       </section>
     </div>
