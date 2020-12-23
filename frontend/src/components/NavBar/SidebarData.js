@@ -5,22 +5,6 @@ import * as IoIcons from 'react-icons/io';
 import * as BsIcons from 'react-icons/bs';
 import * as CgIcons from 'react-icons/cg';
 
-
-
-/*
-{
-    title: 'Messages',
-    path: '/messages',
-    icon: <FaIcons.FaEnvelopeOpenText />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
-    cName: 'nav-text'
-  }
- */
 export const SidebarData = [
   {
     title: 'Discover',
@@ -32,6 +16,18 @@ export const SidebarData = [
     title: 'Artist',
     path: '/artist-page',
     icon: <BsIcons.BsMusicNoteBeamed />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Label',
+    path: '/label',
+    icon: <BsIcons.BsFillTagFill />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Wallet',
+    path: '/wallet',
+    icon: <IoIcons.IoIosPeople />,
     cName: 'nav-text'
   },
   {

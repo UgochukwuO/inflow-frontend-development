@@ -23,8 +23,10 @@ import Dashboard from "./pages/Dashboard";
 import TradingPage from "./pages/TradingPage/tradingPage"
 import ArtistPage from './pages/ArtistPage/artistPage'
 import EcoManagePage from './pages/EcoManagePage/ecoManagePage'
-
+import LabelPage from "./pages/LabelPage/labelPage";
+import Wallet from "./pages/Wallet/wallet";
 import "./default.scss";
+
 
 const App = (props) => {
   return (
@@ -61,6 +63,20 @@ const App = (props) => {
           path="/eco-manage-page"
           render={() => (
             <EcoManagePage />
+          )}
+        />
+        <Route
+          exact
+          path="/label"
+          render={() => (
+            <LabelPage />
+          )}
+        />
+        <Route
+          exact
+          path="/wallet"
+          render={() => (
+            <Wallet />
           )}
         />
         <Route path="/registration" render={() => (

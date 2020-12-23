@@ -66,7 +66,7 @@ const ArtistPage = (props) => {
         <div>
             <NavLink to="/eco-manage-page">
                 <EcosystemButton>
-                    Ecosystem Management
+                    Incentive
                 </EcosystemButton>
             </NavLink>
         </div>

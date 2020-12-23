@@ -1,0 +1,18 @@
+.label-price {
+    color: white;
+
+    .title {
+        margin-top: 3vh;
+        font-size: 1.7rem;  
+    }
+
+    .price {
+        max-width: 100px;
+        margin: 1vh auto;
+        border-radius: 10px;
+        background: #121E37;
+        text-align: center;
+        padding: 1vh;
+        font-size: 2.5rem;
+    }
+}
