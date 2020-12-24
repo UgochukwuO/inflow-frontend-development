@@ -4,7 +4,7 @@ import "./styles.scss";
 
 const Registration = (props) => {
   return (
-    <div>
+    <div className='register-page'>
       <p style={{ 
         color: "white", 
         textAlign: "center", 

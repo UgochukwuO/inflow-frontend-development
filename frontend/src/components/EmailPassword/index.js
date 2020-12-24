@@ -16,7 +16,7 @@ const EmailPassword = props => {
   
 
   const configAuthWrapper = {
-    headline: 'Email Password'
+    headline: ''
   };
 
   return (

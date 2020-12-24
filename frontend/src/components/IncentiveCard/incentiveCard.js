@@ -1,4 +1,6 @@
 import React from 'react'
+import DefaultButton from '../Buttons/defaultButton'
+import ProgressBar from '../ProgressBar/progressBar'
 
 import './incentiveCard.scss'
 
@@ -9,14 +11,22 @@ const IncentiveCard = () => {
         <a>TOKEN NAME</a>
       </div>
       <div className="incentive-data">
-          <div style={{textAlign: 'left', paddingLeft: '10px'}}>1hr facetime call: 80 Tokens</div>
-          <div>Purchase</div>
+          <div className="incentive-div-alignment">1hr Facetime call: 80 Tokens</div>
+          <div className='incentive-purchase-btn'>
+            <DefaultButton>
+              Purchase
+            </DefaultButton>
+          </div>
 
-          <div style={{textAlign: 'left', paddingLeft: '10px'}}>Release Song: 1,000 Tokens</div>
-          <div>Bar</div>
+          <div className="incentive-div-alignment">Release Song: 1,000 Tokens</div>
+          <div>
+            <ProgressBar />
+          </div>
 
-          <div style={{textAlign: 'left', paddingLeft: '10px'}}>Album Release: 60,000 Tokens</div>
-          <div>bar</div>
+          <div className="incentive-div-alignment">Album Release: 60,000 Tokens</div>
+          <div>
+            <ProgressBar />
+          </div>
       </div>
     </div>
     )

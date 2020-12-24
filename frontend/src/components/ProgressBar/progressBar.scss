@@ -1,0 +1,23 @@
+.progress-bar {
+    margin: auto;
+    
+    .progress-bar-container {
+        margin: auto;
+        width: 180px;
+        max-width: 80%;
+        height: 15px;
+        background: #03102A;
+        border: none;
+        border-radius: 10px;
+
+        .progress-meter {
+            background: #4AD295;
+            width: 80px;
+            max-width: 80%;
+            height: 15px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+    }
+
+}

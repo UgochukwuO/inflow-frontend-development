@@ -1,10 +1,13 @@
 .navbar {
   width: 65px;
-  background-color: #03102A;
+  outline: 0;
+  background-color: transparent;
   height: 80px;
   display: flex;
   justify-content: start;
   align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 .menu-bars {
@@ -12,18 +15,24 @@
   font-size: 2rem;
   background: none;
 }
-//width: 375px; - Development
-//width: 413px; - Production
+//width: 375px; - Development (Comment Deprecated)
+//width: 413px; - Production (Comment Deprecated)
 .nav-menu {
   background-color: #182541;
-  width: 375px;
+  width: 200px;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-items: left;
   position: fixed;
   top: 0;
   left: -100%;
   transition: 850ms;
+}
+
+@media screen and (max-width: 1346px) {
+  .nav-menu {
+    width: 100%;
+  }
 }
 
 .nav-menu.active {

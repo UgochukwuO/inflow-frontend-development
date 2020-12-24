@@ -4,7 +4,7 @@ import './tradingPage.scss'
 
 const Trading = () => {
     return (
-        <div>
+        <div className='trading-page'>
             <TradingCard />    
         </div>
     )

@@ -4,7 +4,7 @@ import SignIn from "./../../components/SignIn";
 
 const Login = (props) => {
   return (
-    <div>
+    <div className='login-page'>
       <p style={{ color: "white", 
       textAlign: "center", 
       fontSize: '3rem' }}

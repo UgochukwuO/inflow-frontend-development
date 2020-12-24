@@ -1,6 +1,15 @@
 .eco-manage-page {
      height: calc(100% - 6.5rem - 5.8rem);
      width: 100%;
+     color: white;
+     text-align: center;
+     //margin-top for fixed navbar
+     margin-top: 10vh;
+
+     .incentive-card-align {
+         width: 80%;
+         margin: auto;
+     }
         
      .trading-button {
           margin: auto auto 3vh;
@@ -15,10 +24,12 @@
            color: white;
       }
 
-      .card {
+      .eco-card {
+          margin: auto;
           width: 100%;
           display: grid;
           grid-template-columns: 2fr 2fr;
+          
            .card1 {
                border-right: 1px solid rgba(255, 255, 255, 0.337);
            }
