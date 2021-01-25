@@ -8,7 +8,7 @@ const IncentiveCard = () => {
     return (
         <div className='incentive-card'>
       <div className="title">
-        <a>TOKEN NAME</a>
+        <a>PURCHASE</a>
       </div>
       <div className="incentive-data">
           <div className="incentive-div-alignment">1hr Facetime call: 80 Tokens</div>
