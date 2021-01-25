@@ -5,9 +5,10 @@ import ArtistName from "../../components/ArtistName/artistName";
 import ArtistImage from "../../components/ArtistImage/artistImage";
 import ArtistPrice from "../../components/ArtistPrice/artistPrice";
 import ArtistPriceGraph from "../../components/ArtistPriceGraph/artistPriceGraph";
-import ArtistVideo from "../../components/ArtistVideo/artistVideo";
+//import ArtistVideo from "../../components/ArtistVideo/artistVideo";
 import BubbleDisplay from "../../components/BubbleDisplay/bubbleDisplay";
 import EcosystemButton from "../../components/Buttons/ecosystemButton";
+import ArtistCard from '../../components/DiscoveryCard/artistCard'
 
 import "./artistPage.scss";
 
@@ -38,7 +39,6 @@ const ArtistPage = (props) => {
   return (
     <div>
       <section className="artist-page">
-        <SearchBar />
         <div className="name-image">
           <ArtistName>Smino</ArtistName>
           <ArtistImage />
@@ -49,7 +49,7 @@ const ArtistPage = (props) => {
           </ArtistPrice>
         </div>
         <ArtistPriceGraph />
-        <ArtistVideo />
+        <ArtistCard />
         <div className='bubble-container'>
           <BubbleDisplay {...configSupplyHeadline}>
               18.8M
@@ -65,8 +65,8 @@ const ArtistPage = (props) => {
         </div>
         <div>
             <NavLink to="/eco-manage-page">
-                <EcosystemButton>
-                    Incentive
+                <EcosystemButton style={{ fontSize: '1.7rem' }}>
+                    Incentives and Rewards
                 </EcosystemButton>
             </NavLink>
         </div>

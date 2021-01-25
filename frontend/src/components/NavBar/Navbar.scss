@@ -19,8 +19,9 @@
 //width: 413px; - Production (Comment Deprecated)
 .nav-menu {
   background-color: #182541;
-  width: 200px;
+  width: 250px;
   height: 100vh;
+  z-index: 1;
   display: flex;
   justify-items: left;
   position: fixed;

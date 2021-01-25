@@ -1,12 +1,25 @@
 .video-embed {
-    width: 100%;
-    margin: auto;
-    text-align: center;
+  width: 100%;
+  margin: auto;
+  text-align: center;
 
+  .video {
+    max-width: 95%;
+    max-height: 600px;
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 660px) {
     .video {
-        max-width: 90%;
-        border-radius: 13px;
-        overflow-y: auto; 
-        overflow-x: hidden;
+      max-height: 400px;
     }
+  }
+
+  @media screen and (max-width: 400px) {
+    .video {
+      max-height: 200px;
+    }
+  }
 }

@@ -2,22 +2,21 @@ import React from "react";
 import "./discoveryCard.scss";
 import * as FiIcons from "react-icons/fi";
 
-import HomeVideoData from '../SlideShow/homeVideoData';
-import HomeSlideShow from "../SlideShow/homeSlideShow";
-
+import ArtistVideoData from '../SlideShow/artistVideoData';
+import ArtistSlideShow from "../SlideShow/artistSlideShow";
 
 //<FiIcons.FiPlay />
 
-const DiscoveryCard = () => {
+const ArtistCard = () => {
   return (
     <div className="card">
       <div className="container">
         <div>
-          <HomeSlideShow slides={HomeVideoData} />
+          <ArtistSlideShow slides={ArtistVideoData} />
         </div>
       </div>
     </div>
   );
 };
 
-export default DiscoveryCard;
+export default ArtistCard;

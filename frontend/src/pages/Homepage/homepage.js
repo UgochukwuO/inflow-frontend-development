@@ -7,14 +7,13 @@ import RecentSongs from '../../components/RecentSongs/recentSongs'
 
 import './homepage.scss';
 
-//<Directory />
-
 const Homepage = props => {
+
   return (
     <div>
     <section className="homepage">
       <div className='trade-button-align'>
-        <TradingButton>
+        <TradingButton style={{ textAlign: 'center'}}>
           Trade | Liquidity Pool
         </TradingButton>
       </div>

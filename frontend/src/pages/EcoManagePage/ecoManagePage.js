@@ -13,11 +13,11 @@ const EcoManagePage = (props) => {
   return (
     <div>
       <div className="eco-manage-page">
-        <div className="trading-button">
+        <div className="trade-button-align">
           <TradingButton>Trade | Liquidity Pool</TradingButton>
         </div>
         <SearchBar />
-        <p>Ecosystem Management</p>
+        <p>Incentives and Rewards</p>
         <div className="eco-card">
           <div className="card1">
             <div>

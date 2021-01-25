@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 
 //components
 import Navbar from './components/NavBar/Navbar'
@@ -7,55 +7,54 @@ import Footer from './components/Footer'
 
 // layouts
 import MainLayout from "./layouts/MainLayout";
-import HomepageLayout from "./layouts/HomepageLayout";
-import AdminLayout from "./layouts/AdminLayout";
-import DashboardLayout from "./layouts/DashboardLayout";
-
-import VerticalNav from './components/VerticalNav'
 
 // pages
 import Homepage from "./pages/Homepage/homepage";
-import Admin from './pages/Admin';
 import Registration from "./pages/Registration";
 import Login from "./pages/Login";
 import Recovery from "./pages/Recovery";
-import Dashboard from "./pages/Dashboard";
 import TradingPage from "./pages/TradingPage/tradingPage"
 import ArtistPage from './pages/ArtistPage/artistPage'
 import EcoManagePage from './pages/EcoManagePage/ecoManagePage'
 import LabelPage from "./pages/LabelPage/labelPage";
 import Wallet from "./pages/Wallet/wallet";
 import "./default.scss";
+import Logo from "./components/Logo/logo";
 
 
 const App = (props) => {
   return (
     <div className="App">
+      <Link to='/'>
+        <Logo/>
+      </Link>
       <Navbar />
       <Switch>
         <Route
           exact
           path="/"
           render={() => (
-            <HomepageLayout>
+            <MainLayout>
               <Homepage />
-            </HomepageLayout>
+            </MainLayout>
           )}
         />
         <Route
           exact
           path="/trading-page"
           render={() => (
-            <HomepageLayout>
+            <MainLayout>
               <TradingPage />
-            </HomepageLayout>
+            </MainLayout>
           )}
         />
         <Route
           exact
           path="/artist-page"
           render={() => (
-            <ArtistPage />
+            <MainLayout>
+              <ArtistPage />
+            </MainLayout>
           )}
         />
         <Route
@@ -88,17 +87,6 @@ const App = (props) => {
           )} />
         <Route path="/recovery" render={() => (
             <Recovery />
-        )} />
-        <Route path="/dashboard" render={() => (
-
-            <DashboardLayout>
-              <Dashboard />
-            </DashboardLayout>
-        )} />
-        <Route path="/admin" render={() => (
-          
-              <Admin />
-           
         )} />
       </Switch>
       <Footer />

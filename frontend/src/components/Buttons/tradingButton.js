@@ -8,7 +8,7 @@ const TradingButton = ({ children, ...otherProps }) => {
   return (
     <div>
       <button className="trading-button" {...otherProps}>
-        <NavLink style={{color: "white"}} to="/trading-page">
+        <NavLink style={{color: "white" }} to="/trading-page">
           {children}
         </NavLink>
       </button>
