@@ -1,4 +1,4 @@
-# Link: https://inflow-frontend-dev.web.app/
+# MVP Link: https://inflow-frontend-dev.web.app/
 
 
 # Getting Started with Create React App
